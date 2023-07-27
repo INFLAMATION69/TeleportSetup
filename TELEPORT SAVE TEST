@@ -1,0 +1,64 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Save and Run Cords", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "TELEPORT 1"
+})
+
+Tab:AddButton({
+	Name = "Teleport Save 1",
+	Callback = function()
+TELEPORTA5 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Teleport 1",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(TELEPORTA5)
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "TELEPORT 2"
+})
+
+Tab:AddButton({
+	Name = "Teleport Save 2",
+	Callback = function()
+TELEPORTA6 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Teleport 2",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(TELEPORTA6)
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "TELEPORT 3"
+})
+
+Tab:AddButton({
+	Name = "Teleport Save 3",
+	Callback = function()
+TELEPORTA7 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Teleport 3",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(TELEPORTA7)
+  	end    
+})
+
